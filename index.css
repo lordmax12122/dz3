@@ -1,0 +1,29 @@
+.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.fruits-img {
+    display: block;
+    width: 1000px;
+    height: 1000px;
+    }
+
+    @keyframes wipe-enter {
+        0% {
+            transform: scale(0.5);
+        }
+        50% {
+            transform: scale(0.75); 
+        }
+        100% {
+            opacity: 1; 
+        }
+    }
+
+    .fruits-animations {
+        animation: wipe-enter 1s 1;
+            animation-fill-mode: forwards;
+    }
+
